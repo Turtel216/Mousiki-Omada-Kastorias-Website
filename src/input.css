@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Custom Styles */
+/* Footer */
 .bg-custom-dark {
   @apply bg-[#1d1d33]; /* Custom dark background color */
 }
