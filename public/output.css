@@ -554,15 +554,179 @@ video {
   --tw-contain-style:  ;
 }
 
-.text-3xl {
+.container {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.p-8 {
+  padding: 2rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Custom Styles */
+
+.bg-custom-dark {
+  --tw-bg-opacity: 1;
+  background-color: rgb(29 29 51 / var(--tw-bg-opacity));
+  /* Custom dark background color */
+}
+
+.text-custom-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  /* White text color */
+}
+
+.text-custom-pink {
+  --tw-text-opacity: 1;
+  color: rgb(236 72 153 / var(--tw-text-opacity));
+  /* Pink text color */
+}
+
+.font-handwriting {
+  font-family: 'Pacifico', cursive;
+  /* Use a handwriting style font */
+}
+
+.custom-logo-font {
+  font-size: 3rem;
+  line-height: 1;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  /* White text color */
+  font-family: 'Pacifico', cursive;
+  /* Use a handwriting style font */
+  /* Custom font size for the logo text */
+}
+
+.custom-subtitle-font {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  /* White text color */
+  /* Smaller text for the subtitle */
+}
+
+.info-section {
+  margin-top: 3rem;
+  text-align: center;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  /* White text color */
+  /* Center-aligned text with margin-top */
+}
+
+.contact-info {
+  margin-top: 2rem;
+  text-align: center;
+  /* Center text with margin-top */
+}
+
+.contact-info-title {
+  margin-top: 1rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+  /* Bold font for titles */
+}
+
+.contact-info-detail {
+  margin-top: 0.25rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  /* Regular font for details */
+}
+
+.social-icons {
+  margin-top: 1rem;
+  text-align: center;
+  /* Social icons alignment */
+}
+
+.social-icon {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  display: inline-block;
   font-size: 1.875rem;
   line-height: 2.25rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  /* White text color */
+  /* Social icon size and margin */
 }
 
-.font-bold {
-  font-weight: 700;
+.footer-credits {
+  margin-top: 3rem;
+  text-align: center;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  /* White text color */
+  /* Footer credits styling */
 }
 
-.underline {
-  text-decoration-line: underline;
+.powered-by-section {
+  margin-top: 3rem;
+  text-align: center;
+  /* 'Powered by' section styling */
+}
+
+.university-logo {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  height: auto;
+  width: 6rem;
+  /* Logo size and margin */
+}
+
+.omada-logo {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  height: auto;
+  width: 9rem;
+  border-radius: 9999px;
+  /* Logo size and margin */
 }
