@@ -64,5 +64,5 @@
 }
 
 .omada-logo {
-  @apply mx-auto w-36 h-auto mt-4 rounded-full; /* Logo size and margin */
+  @apply mx-auto w-28 h-28 mt-4 rounded-full; /* Logo size and margin */
 }

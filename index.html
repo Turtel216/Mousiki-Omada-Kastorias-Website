@@ -14,19 +14,41 @@
 
 <body class="scroll-smooth">
 
-  <!-- Section with full image -->
-  <div class="relative w-full h-screen md:h-auto overflow-hidden">
-    <img src="public/1.png" alt="Description of the image" class="w-full h-full object-fill">
-  </div>
-  <main>
+  <!-- Sidebar Navigation -->
+  <aside class="fixed top-0 left-0 h-screen w-64 bg-gray-800 text-white flex flex-col">
+    <!-- Logo -->
+    <div class="text-center p-4 font-bold text-xl">
+      Μουσική Ομάδα
+    </div>
 
-    <!--Img-->
-    <section class="max-w-4xl mx-auto py-12">
-    </section>
+    <!-- Navigation Links -->
+    <nav class="flex flex-col p-4 space-y-6">
+      <a href="#home" class="text-lg font-semibold hover:text-gray-400">Home</a>
+      <a href="#about" class="text-lg font-semibold hover:text-gray-400">ΓΙΑ ΕΜΑΣ</a>
+      <a href="#team" class="text-lg font-semibold hover:text-gray-400">Η ΟΜΑΔΑ ΜΑΣ</a>
+      <a href="#contact" class="text-lg font-semibold hover:text-gray-400">Contact</a>
+    </nav>
 
+    <!-- Social Icons -->
+    <div class="mt-auto p-4">
+      <div class="flex justify-center space-x-4">
+        <a href="https://www.instagram.com/mousiki_kastorias?igsh=MXZteWo1MjZraTVjNw==" class="hover:text-gray-400"><i
+            class="fab fa-instagram"></i></a>
+        <a href="#" class="hover:text-gray-400"><i class="fab fa-facebook"></i></a>
+      </div>
+    </div>
+  </aside>
 
-    <!--Gia emas-->
-    <section class="bg-gray-100 flex items-center justify-center min-h-screen">
+  <!-- Main Content -->
+  <main class="ml-64">
+
+    <!-- Section with full image -->
+    <div id="home" class="relative w-full h-screen md:h-auto overflow-hidden">
+      <img src="public/1.png" alt="Description of the image" class="w-full h-full object-cover">
+    </div>
+
+    <!-- About Us Section (ΓΙΑ ΕΜΑΣ) -->
+    <section id="about" class="bg-gray-100 flex items-center justify-center min-h-screen">
       <div class="max-w-2xl mx-auto p-4 text-center">
         <!-- Heading -->
         <h1 class="text-4xl font-bold mb-8">ΓΙΑ ΕΜΑΣ</h1>
@@ -43,8 +65,8 @@
       </div>
     </section>
 
-    <!--H omada mas-->
-    <section class="bg-gray-200 flex items-center justify-center min-h-screen">
+    <!-- Our Team Section (Η ΟΜΑΔΑ ΜΑΣ) -->
+    <section id="team" class="bg-gray-200 flex items-center justify-center min-h-screen">
       <div class="max-w-4xl mx-auto p-4 text-center">
         <!-- Heading -->
         <h1 class="text-4xl font-bold mb-12">Η ΟΜΑΔΑ ΜΑΣ</h1>
@@ -54,15 +76,14 @@
           <div>
             <img src="public/omada1.jpg" alt="Team Image 1" class="w-full h-auto mb-4 object-cover">
           </div>
-
           <div>
             <img src="public/omada2.jpg" alt="Team Image 2" class="w-full h-auto mb-4 object-cover">
           </div>
-
           <div>
             <img src="public/omada3.jpg" alt="Team Image 3" class="w-full h-auto mb-4 object-cover">
           </div>
         </div>
+
         <div class="flex items-center justify-center p-4">
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-36 gap-y-4">
             <p class="font-semibold">Συντονίστρια</p>
@@ -72,16 +93,16 @@
           </div>
         </div>
       </div>
-      <!--TODO-->
     </section>
 
-    <!--Footer-->
-    <section class="bg-custom-dark">
+    <!-- Contact Section -->
+    <section id="contact" class="bg-custom-dark">
       <div class="container mx-auto p-8">
 
         <!-- Logo and Title -->
         <div class="text-center">
-          <img src="public/omada_logo.jpg" alt="University of Western Macedonia" class="omada-logo">
+          <div class="custom-logo-font">Μουσική</div>
+          <div class="custom-logo-font">Ο ήχος των συναισθημάτων</div>
         </div>
 
         <!-- Contact Information -->
@@ -91,14 +112,18 @@
           <div class="contact-info-detail">MOFKASTORIAS@GMAIL.COM</div>
           <div class="contact-info-title">SOCIAL</div>
           <div class="social-icons">
-            <span class="social-icon"><i class="fab fa-instagram"></i></span>
+            <a href="https://www.instagram.com/mousiki_kastorias?igsh=MXZteWo1MjZraTVjNw==">
+              <span class="social-icon"><i class="fab fa-instagram"></i></span>
+            </a>
           </div>
         </div>
 
         <!-- Powered By -->
         <div class="powered-by-section">
           <div class="contact-info-title">POWERED BY</div>
-          <img src="public/uowm-logo.png" alt="University of Western Macedonia" class="university-logo">
+          <a href="https://www.uowm.gr/">
+            <img src="public/uowm-logo.png" alt="University of Western Macedonia" class="university-logo">
+          </a>
         </div>
 
         <!-- Footer Credits -->
